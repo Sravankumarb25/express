@@ -6,16 +6,17 @@ const mysql = require('mysql');
 const cors = require('cors');
 const app = express();
 const port = 3002;
-// app.use(cors({
-//   origin: 'http://localhost:3000',
-//   credentials: true, // Enable sending cookies
-// }));
+app.use(cors({
+  origin: '*',
+  credentials: true, // Enable sending cookies
+}));
 app.use(express.json());
 const connection = mysql.createConnection({
 
-  host: '34.28.131.242',
+  host: 'localhost',
   user: 'root',
-  database: 'edoresponses'
+  password:"Sravan@3025",
+  database: 'user'
 });
 
 connection.connect((err) => {
