@@ -13,10 +13,9 @@ app.use(cors({
 app.use(express.json());
 const connection = mysql.createConnection({
 
-  host: 'localhost',
+  host: '34.28.131.242',
   user: 'root',
-  password:"Sravan@3025",
-  database: 'user'
+  database: 'edoresponses'
 });
 
 connection.connect((err) => {
