@@ -1,8 +1,8 @@
 const express = require('express');
 const mysql = require('mysql');
-const fs = require('fs');
-const path = require('path');
-const { table } = require('console');
+
+
+
 const cors = require('cors');
 const app = express();
 const port = 3002;
