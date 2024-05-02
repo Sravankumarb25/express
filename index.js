@@ -13,7 +13,7 @@ app.use(cors({
 app.use(express.json());
 const connection = mysql.createConnection({
 
-  host: '34.28.131.242',
+  host: '34.70.134.251',
   user: 'root',
   database: 'edoresponses'
 });
@@ -26,7 +26,9 @@ connection.connect((err) => {
   console.log('Connected to MySQL as id ' + connection.threadId);
 });
 
-
+app.get("/",(req,res)=>{
+  res.send("helloworld")
+})
 
   app.post('/query', (req, res) => {
     const query = req.body.query;
