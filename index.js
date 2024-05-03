@@ -13,9 +13,11 @@ app.use(cors({
 app.use(express.json());
 const connection = mysql.createConnection({
 
-  host: '34.70.134.251',
-  user: 'root',
-  database: 'edoresponses'
+  host: "bcs5gehb4n0ke1oyivai-mysql.services.clever-cloud.com",
+  user: 'ujrrh5mr2koynblu',
+  database: 'bcs5gehb4n0ke1oyivai',
+  password:"uGFhj03ml6FaTOvv8oY4",
+  port:3306,
 });
 
 connection.connect((err) => {
